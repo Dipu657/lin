@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account created</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center">My <span class="text-green-500"> Account </span></h1>
+    </header>
+    <main class="mt-8">
+        <section class="grid grid-cols-3 gap-4 w-3/4 mx-auto  " >
+             <div class="bg-red-400 p-9 rounded-lg"><h3 class="text-white text-3xl">Deposit</h3>
+                <p class="text-5xl text-white">$ <span id="deposit-total">1000</span></p>
+            </div>
+            <div class="bg-blue-400 p-9 rounded-lg">
+                <h3 class="text-3xl text-white">Withdraw</h3>
+                <p class="text-5xl text-white">$ <span id="Withdraw-total">1000</span></p>
+            </div>
+            <div class="bg-red-400 p-9 rounded-lg">
+                <h3 class="text-3xl text-white">balance</h3>
+                <p class="text-5xl text-white">$ <span id="balance-total">500</span></p>
+            </div>
+
+        </section>
+        <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-8 " >
+            <div class="bg-blue-400 p-9 rounded-lg">
+                <h3 class="text-3xl text-white">Your Deposit</h3>
+                <input id="Deposit-field" class="w-3/4 px-4 py-2 rounded-block" type="text" placeholder="Enter Amount"> <br>
+                <button id="btn-Deposit" class="bg-blue-800 px-6 py-2 text-white rounded-lg  font-medium hover:bg-blue-800">Deposit</button>
+            </div>
+            <div class="bg-red-400 p-9 rounded-lg">
+                <h3 class="text-3xl text-white">Your Withdraw</h3>
+                <input id="Withdraw-field" class="w-3/4 px-4 py-2 rounded-block" type="text" placeholder="Enter Amount"> <br>
+               <button id="btn-Withdraw" class="bg-blue-800 px-6 py-2 text-white rounded-lg  font-medium hover:bg-blue-800">Withdraw</button>
+            </div>
+        </section>
+    </main>
+    <script src="/job.js"></script>
+</body>
+</html>
